@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MeetingRoomBooking.API/MeetingRoom.API.csproj" />
+  <Project Path="MeetingRoomBooking.Application/MeetingRoomBooking.Application.csproj" Id="745fc068-797b-4a00-a5cb-a3f3b75879b5" />
+  <Project Path="MeetingRoomBooking.Domain/MeetingRoomBooking.Domain.csproj" Id="d6469afa-9310-49d3-9384-301c10ca2942" />
+  <Project Path="MeetingRoomBooking.Infrastructure/MeetingRoomBooking.Infrastructure.csproj" Id="71dffbbf-671e-4f5e-88c7-54848a030d43" />
+</Solution>

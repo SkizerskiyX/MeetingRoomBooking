@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "MeetingRoomBooking.Application/1.0.0": {
+        "dependencies": {
+          "MeetingRoomBooking.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MeetingRoomBooking.Application.dll": {}
+        }
+      },
+      "MeetingRoomBooking.Domain/1.0.0": {
+        "runtime": {
+          "MeetingRoomBooking.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MeetingRoomBooking.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MeetingRoomBooking.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
