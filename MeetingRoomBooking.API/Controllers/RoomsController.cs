@@ -14,17 +14,13 @@ namespace MeetingRoom.API.Controllers
         {
             _roomRepository = roomRepository;
         }
-
-        [HttpPost]
-        public async Task<IActionResult> RoomCreateAsync(RoomDto roomDto, CancellationToken ct)
+        [HttpGet]
+        public async Task<IActionResult> GetAllAsync(CancellationToken ct)
         {
-            var room = roomDto.ToEntity();
-
-            await _roomRepository.AddAsync(room, ct);
-
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = room.Id }, room);
+            var room = await _roomRepository.GetAllAsync(ct);
+            return Ok(room);
+            
         }
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(Guid id, CancellationToken ct)
         {
@@ -32,5 +28,46 @@ namespace MeetingRoom.API.Controllers
             if (room == null) return NotFound();
             return Ok(room);
         }
+        [HttpPost]
+        public async Task<IActionResult> RoomCreateAsync(RoomDto roomDto, CancellationToken ct)
+        {
+            var room = roomDto.ToEntity();
+
+            await _roomRepository.AddAsync(room, ct);
+
+            return CreatedAtAction(nameof(GetByIdAsync), new { id = room.Id }, room.ToDto());
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateAsync(Guid id, RoomDto roomDto, CancellationToken ct)
+        {
+            var room = roomDto.ToEntity();
+            room.Id = id;
+            try
+            {
+                await _roomRepository.UpdateAsync(room, ct);
+                return NoContent();
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
+
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAsync(Guid id, CancellationToken ct)
+        {
+            try
+            {
+                await _roomRepository.DeleteAsync(id, ct);
+                return NoContent();
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
+        }
+
+
+        
     }
 }
