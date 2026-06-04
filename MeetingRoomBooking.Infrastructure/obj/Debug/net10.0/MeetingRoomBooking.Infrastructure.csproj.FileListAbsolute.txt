@@ -34,3 +34,4 @@ C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Infrastructure
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Infrastructure\obj\Debug\net10.0\MeetingRoomBooking.Infrastructure.pdb
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Infrastructure\obj\Debug\net10.0\MeetingRoomBooking.Infrastructure.genruntimeconfig.cache
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Infrastructure\obj\Debug\net10.0\ref\MeetingRoomBooking.Infrastructure.dll
+C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Infrastructure\obj\Debug\net10.0\MeetingRoomBooking.Infrastructure.sourcelink.json

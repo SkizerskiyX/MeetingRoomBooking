@@ -2,12 +2,94 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Distributed;
+using MeetingRoomBooking.Domain.Entities;
+using System.Text.Json;
 
 namespace MeetingRoomBooking.Infrastructure.Repositories
 {
-    public class CachedRoomRepository
+    public class CachedRoomRepository : IRoomRepository
     {
-        
+        private readonly IDistributedCache _cache;
+        private readonly IRoomRepository _innerRepo;
+       
+        private const string CacheKey = "all_rooms";
+
+        public CachedRoomRepository(IDistributedCache cache, IRoomRepository innerRepo)
+        {
+            _cache = cache;
+            _innerRepo = innerRepo;
+            
+        }
+
+        public async Task<IEnumerable<Room>> GetAllAsync(CancellationToken ct)
+        {
+            var cachedata = await _cache.GetStringAsync(CacheKey, ct);
+
+            if (!string.IsNullOrEmpty(cachedata))
+            {
+                return JsonSerializer.Deserialize<IEnumerable<Room>>(cachedata) ?? Enumerable.Empty<Room>();
+            }
+                
+            var rooms = await _innerRepo.GetAllAsync(ct);
+
+            var jsonData = JsonSerializer.Serialize(rooms);
+            var options = new DistributedCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
+            };
+            await _cache.SetStringAsync(CacheKey, jsonData, options, ct);
+
+            return rooms;
+        }
+        public async Task AddAsync(Room room, CancellationToken ct)
+        {
+            await _innerRepo.AddAsync(room, ct);
+
+            await _cache.RemoveAsync(CacheKey, ct);
+        }
+
+        public async Task UpdateAsync(Room room, CancellationToken ct)
+        {
+            await _innerRepo.UpdateAsync(room, ct);
+
+            await _cache.RemoveAsync(CacheKey, ct);
+            await _cache.RemoveAsync($"room_{room.Id}", ct);
+        }
+
+        public async Task DeleteAsync(Guid id, CancellationToken ct)
+        {
+            await _innerRepo.DeleteAsync(id, ct);
+
+            await _cache.RemoveAsync(CacheKey, ct);
+            await _cache.RemoveAsync($"room_{id}", ct);
+        }
+
+        public async Task<Room?> GetByIdAsync(Guid id, CancellationToken ct)
+        {
+            var key = $"room_{id}";
+            var cachedata = await _cache.GetStringAsync(key, ct);
+
+            if (!string.IsNullOrEmpty(cachedata))
+            {
+                return JsonSerializer.Deserialize<Room?>(cachedata);
+            }
+
+            var room = await _innerRepo.GetByIdAsync(id, ct);
+
+            if (room != null)
+            {
+                var jsonData = JsonSerializer.Serialize(room);
+                var options = new DistributedCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
+                };
+                await _cache.SetStringAsync(key, jsonData, options, ct);
+            }
+
+            return room;
+        }
     }
 }

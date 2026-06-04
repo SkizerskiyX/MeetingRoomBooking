@@ -1,7 +1,10 @@
+using MeetingRoomBooking.Domain.Abstraction;
 using MeetingRoomBooking.Infrastructure.MeetingRoomContext;
+using MeetingRoomBooking.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Identity.Web;
 
@@ -16,7 +19,6 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 
-var app = builder.Build();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(ApplicationDbContext))));
 var redisConnectionString = builder.Configuration.GetSection("RedisSettings:ConnectionString").Value;
@@ -24,6 +26,14 @@ builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = redisConnectionString;
 });
+builder.Services.AddScoped<RoomRepository>();
+builder.Services.AddScoped<IRoomRepository>(provider =>
+{
+    var cache = provider.GetRequiredService<IDistributedCache>();
+    var dbRepo = provider.GetRequiredService<RoomRepository>();
+    return new CachedRoomRepository(cache, dbRepo);
+});
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

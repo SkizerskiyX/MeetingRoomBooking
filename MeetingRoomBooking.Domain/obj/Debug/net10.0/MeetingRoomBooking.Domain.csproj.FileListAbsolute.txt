@@ -20,3 +20,4 @@ C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Domain\obj\Deb
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Domain\obj\Debug\net10.0\refint\MeetingRoomBooking.Domain.dll
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Domain\obj\Debug\net10.0\MeetingRoomBooking.Domain.pdb
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Domain\obj\Debug\net10.0\ref\MeetingRoomBooking.Domain.dll
+C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Domain\obj\Debug\net10.0\MeetingRoomBooking.Domain.sourcelink.json

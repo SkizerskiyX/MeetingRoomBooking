@@ -5,7 +5,7 @@ using MeetingRoomBooking.Domain.Entities;
 
 namespace MeetingRoomBooking.Application.Contracts
 {
-    public static class RoomMapper
+    public static class RoomMappingExtensions
     {
         public static RoomDto ToDto(this Room room)
         {
@@ -16,5 +16,16 @@ namespace MeetingRoomBooking.Application.Contracts
                 Capacity = room.Capacity
             };
         }
+
+        public static Room ToEntity(this RoomDto roomDto)
+        {
+            return new Room
+            {
+                Name = roomDto.Name,
+                Capacity = roomDto.Capacity
+
+            };
+        }
+
     }
 }

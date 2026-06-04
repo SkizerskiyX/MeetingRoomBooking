@@ -28,3 +28,4 @@ C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Application\ob
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Application\obj\Debug\net10.0\refint\MeetingRoomBooking.Application.dll
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Application\obj\Debug\net10.0\MeetingRoomBooking.Application.pdb
 C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Application\obj\Debug\net10.0\ref\MeetingRoomBooking.Application.dll
+C:\Users\exali\source\repos\MeetingRoomBooking\MeetingRoomBooking.Application\obj\Debug\net10.0\MeetingRoomBooking.Application.sourcelink.json
