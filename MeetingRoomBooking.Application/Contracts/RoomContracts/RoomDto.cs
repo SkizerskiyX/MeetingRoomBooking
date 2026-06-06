@@ -1,4 +1,4 @@
-﻿namespace MeetingRoomBooking.Application.Contracts
+﻿namespace MeetingRoomBooking.Application.Contracts.RoomContracts
 {
     public class RoomDto
     {

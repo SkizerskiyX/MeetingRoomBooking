@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using MeetingRoomBooking.Domain.Entities;
 
-namespace MeetingRoomBooking.Application.Contracts
+namespace MeetingRoomBooking.Application.Contracts.RoomContracts
 {
     public static class RoomMappingExtensions
     {

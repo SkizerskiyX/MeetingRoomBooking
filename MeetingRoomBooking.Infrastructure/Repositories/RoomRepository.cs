@@ -22,9 +22,8 @@ namespace MeetingRoomBooking.Infrastructure.Repositories
         }
         public async Task<Room?> GetByIdAsync(Guid id, CancellationToken ct)
         {
-            var roomId = await _context.Rooms.FirstOrDefaultAsync(x => x.Id == id, ct);
+            return await _context.Rooms.FirstOrDefaultAsync(x => x.Id == id, ct);
             
-            return roomId;
         }
         public async Task AddAsync(Room room, CancellationToken ct)
         {

@@ -1,9 +1,9 @@
-﻿using MeetingRoomBooking.Application.Contracts;
+﻿using MeetingRoomBooking.Application.Contracts.RoomContracts;
 using MeetingRoomBooking.Domain.Abstraction;
 using MeetingRoomBooking.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Dynamic;
-namespace MeetingRoom.API.Controllers
+namespace MeetingRoom.API.Controllers.RoomController
 {
     [ApiController]
     [Route("api/[controller]")]

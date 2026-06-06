@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.infrastructure\\repositories\\cachedroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|solutionrelative:meetingroombooking.infrastructure\\repositories\\cachedroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.infrastructure\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|solutionrelative:meetingroombooking.infrastructure\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.domain\\abstraction\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|solutionrelative:meetingroombooking.domain\\abstraction\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.api\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|solutionrelative:meetingroombooking.api\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.infrastructure\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|solutionrelative:meetingroombooking.infrastructure\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{745FC068-797B-4A00-A5CB-A3F3B75879B5}|MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.application\\contracts\\roommapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{745FC068-797B-4A00-A5CB-A3F3B75879B5}|MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj|solutionrelative:meetingroombooking.application\\contracts\\roommapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.infrastructure\\repositories\\cachedroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|solutionrelative:meetingroombooking.infrastructure\\repositories\\cachedroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.domain\\abstraction\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|solutionrelative:meetingroombooking.domain\\abstraction\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|solutionrelative:meetingroombooking.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|solutionrelative:meetingroombooking.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|solutionrelative:meetingroombooking.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.domain\\abstraction\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|solutionrelative:meetingroombooking.domain\\abstraction\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{745FC068-797B-4A00-A5CB-A3F3B75879B5}|MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.application\\contracts\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{745FC068-797B-4A00-A5CB-A3F3B75879B5}|MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj|solutionrelative:meetingroombooking.application\\contracts\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{745FC068-797B-4A00-A5CB-A3F3B75879B5}|MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.application\\contracts\\roommapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{745FC068-797B-4A00-A5CB-A3F3B75879B5}|MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj|solutionrelative:meetingroombooking.application\\contracts\\roommapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6469AFA-9310-49D3-9384-301C10CA2942}|MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|solutionrelative:meetingroombooking.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{745FC068-797B-4A00-A5CB-A3F3B75879B5}|MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.application\\contracts\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{745FC068-797B-4A00-A5CB-A3F3B75879B5}|MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj|solutionrelative:meetingroombooking.application\\contracts\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71DFFBBF-671E-4F5E-88C7-54848A030D43}|MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.infrastructure\\meetingroomcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -84,10 +96,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|c:\\users\\exali\\source\\repos\\meetingroombooking\\meetingroombooking.api\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FAD29C0-B6F8-C927-F865-9D2806ADA351}|MeetingRoomBooking.API\\MeetingRoom.API.csproj|solutionrelative:meetingroombooking.api\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,32 +105,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.API\\Controllers\\RoomsController.cs",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "MeetingRoomBooking.API\\Controllers\\RoomsController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Repositories\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\Repositories\\BookingRepository.cs",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Repositories\\BookingRepository.cs",
+              "RelativeToolTip": "MeetingRoomBooking.Infrastructure\\Repositories\\BookingRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T19:24:29.876Z",
+              "WhenOpened": "2026-06-05T20:04:47.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoomMapper.cs",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\Contracts\\RoomMapper.cs",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.Application\\Contracts\\RoomMapper.cs",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\Contracts\\RoomMapper.cs",
-              "RelativeToolTip": "MeetingRoomBooking.Application\\Contracts\\RoomMapper.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAswBkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IBookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Abstraction\\IBookingRepository.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.Domain\\Abstraction\\IBookingRepository.cs",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Abstraction\\IBookingRepository.cs",
+              "RelativeToolTip": "MeetingRoomBooking.Domain\\Abstraction\\IBookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T16:13:28.776Z"
+              "WhenOpened": "2026-06-04T20:26:20.311Z"
             },
             {
               "$type": "Document",
@@ -138,28 +146,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\Program.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking.API\\Program.cs",
               "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\Program.cs",
               "RelativeToolTip": "MeetingRoomBooking.API\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-22T13:09:43.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IRoomRepository.cs",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Abstraction\\IRoomRepository.cs",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.Domain\\Abstraction\\IRoomRepository.cs",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Abstraction\\IRoomRepository.cs",
-              "RelativeToolTip": "MeetingRoomBooking.Domain\\Abstraction\\IRoomRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T14:57:12.591Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -169,98 +164,51 @@
               "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\Repositories\\RoomRepository.cs",
               "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Repositories\\RoomRepository.cs",
               "RelativeToolTip": "MeetingRoomBooking.Infrastructure\\Repositories\\RoomRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAuwDgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T15:05:58.937Z"
+              "WhenOpened": "2026-05-22T15:05:58.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CachedRoomRepository.cs",
               "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Repositories\\CachedRoomRepository.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\Repositories\\CachedRoomRepository.cs",
               "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Repositories\\CachedRoomRepository.cs",
               "RelativeToolTip": "MeetingRoomBooking.Infrastructure\\Repositories\\CachedRoomRepository.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCgAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAswFkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T14:06:12.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BookingConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Configuration\\BookingConfiguration.cs",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\Configuration\\BookingConfiguration.cs",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Configuration\\BookingConfiguration.cs",
-              "RelativeToolTip": "MeetingRoomBooking.Infrastructure\\Configuration\\BookingConfiguration.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T19:59:52.338Z"
+              "WhenOpened": "2026-05-24T14:06:12.561Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MeetingRoomBooking.Application.csproj",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj",
-              "RelativeToolTip": "MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-22T16:10:22.874Z"
+              "Title": "IRoomRepository.cs",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Abstraction\\IRoomRepository.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.Domain\\Abstraction\\IRoomRepository.cs",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Abstraction\\IRoomRepository.cs",
+              "RelativeToolTip": "MeetingRoomBooking.Domain\\Abstraction\\IRoomRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T14:57:12.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.API\\Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "MeetingRoomBooking.API\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAIwDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T19:24:29.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "RoomConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Configuration\\RoomConfiguration.cs",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\Configuration\\RoomConfiguration.cs",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Configuration\\RoomConfiguration.cs",
-              "RelativeToolTip": "MeetingRoomBooking.Infrastructure\\Configuration\\RoomConfiguration.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T19:59:34.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Entities\\Room.cs",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.Domain\\Entities\\Room.cs",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Entities\\Room.cs",
-              "RelativeToolTip": "MeetingRoomBooking.Domain\\Entities\\Room.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T18:54:53.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MeetingRoom.API.csproj",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\MeetingRoom.API.csproj",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.API\\MeetingRoom.API.csproj",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\MeetingRoom.API.csproj",
-              "RelativeToolTip": "MeetingRoomBooking.API\\MeetingRoom.API.csproj",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-22T13:28:47.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "MeetingRoomBooking.API\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\appsettings.Development.json",
-              "RelativeToolTip": "MeetingRoomBooking.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-24T14:06:17.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "RoomDto.cs",
               "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\Contracts\\RoomDto.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking.Application\\Contracts\\RoomDto.cs",
@@ -272,7 +220,91 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoomMapper.cs",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\Contracts\\RoomMapper.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.Application\\Contracts\\RoomMapper.cs",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\Contracts\\RoomMapper.cs",
+              "RelativeToolTip": "MeetingRoomBooking.Application\\Contracts\\RoomMapper.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T16:13:28.776Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "BookingConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Configuration\\BookingConfiguration.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\Configuration\\BookingConfiguration.cs",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Configuration\\BookingConfiguration.cs",
+              "RelativeToolTip": "MeetingRoomBooking.Infrastructure\\Configuration\\BookingConfiguration.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T19:59:52.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MeetingRoomBooking.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj",
+              "RelativeToolTip": "MeetingRoomBooking.Application\\MeetingRoomBooking.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-22T16:10:22.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoomConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Configuration\\RoomConfiguration.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\Configuration\\RoomConfiguration.cs",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\Configuration\\RoomConfiguration.cs",
+              "RelativeToolTip": "MeetingRoomBooking.Infrastructure\\Configuration\\RoomConfiguration.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T19:59:34.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Entities\\Room.cs",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.Domain\\Entities\\Room.cs",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\Entities\\Room.cs",
+              "RelativeToolTip": "MeetingRoomBooking.Domain\\Entities\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T18:54:53.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MeetingRoom.API.csproj",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\MeetingRoom.API.csproj",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.API\\MeetingRoom.API.csproj",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\MeetingRoom.API.csproj",
+              "RelativeToolTip": "MeetingRoomBooking.API\\MeetingRoom.API.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-22T13:28:47.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MeetingRoomBooking.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.API\\appsettings.Development.json",
+              "RelativeToolTip": "MeetingRoomBooking.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-24T14:06:17.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\MeetingRoomContext\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\MeetingRoomContext\\ApplicationDbContext.cs",
@@ -284,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "MeetingRoomBooking.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj",
               "RelativeDocumentMoniker": "MeetingRoomBooking.Infrastructure\\MeetingRoomBooking.Infrastructure.csproj",
@@ -296,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "MeetingRoomBooking.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj",
               "RelativeDocumentMoniker": "MeetingRoomBooking.Domain\\MeetingRoomBooking.Domain.csproj",
@@ -308,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": ".dockerignore",
               "DocumentMoniker": "C:\\Users\\exali\\source\\repos\\MeetingRoomBooking\\.dockerignore",
               "RelativeDocumentMoniker": ".dockerignore",
@@ -320,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\exali\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\appsettings.json",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\appsettings.json",
@@ -331,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\exali\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\Dockerfile",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\Dockerfile",
@@ -343,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "ConversationRoom.http",
               "DocumentMoniker": "C:\\Users\\exali\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\ConversationRoom.http",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\ConversationRoom.http",
@@ -355,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "MeetingRoom.API.csproj",
               "DocumentMoniker": "C:\\Users\\exali\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\MeetingRoom.API.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\MeetingRoom.API.csproj",
@@ -367,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\exali\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Telegram Desktop\\ConversationRoom\\ConversationRoom\\ConversationRoom\\WeatherForecast.cs",
