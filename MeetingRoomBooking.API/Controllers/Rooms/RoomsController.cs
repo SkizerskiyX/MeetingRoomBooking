@@ -3,7 +3,7 @@ using MeetingRoomBooking.Domain.Abstraction;
 using MeetingRoomBooking.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Dynamic;
-namespace MeetingRoom.API.Controllers.RoomController
+namespace MeetingRoom.API.Controllers.Rooms
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeetingRoomBooking.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5401120449612bdcaf1fc5c4ef51ae19e6bb6013")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8973f6e9dcbfde311a77b69d516deee93d5c74e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeetingRoomBooking.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeetingRoomBooking.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

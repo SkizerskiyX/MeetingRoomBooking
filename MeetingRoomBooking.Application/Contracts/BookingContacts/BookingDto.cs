@@ -4,7 +4,9 @@ using System.Text;
 
 namespace MeetingRoomBooking.Application.Contracts.BookingContacts
 {
-    internal class BookingDto
+    public class BookingDto
     {
+        public DateTimeOffset StartTime { get; set; }
+        public DateTimeOffset EndTime { get; set; }
     }
 }
