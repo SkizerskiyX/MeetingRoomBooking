@@ -1,30 +1,64 @@
+using FluentValidation.AspNetCore;
+using MeetingRoomBooking.API.Middleware;
+using MeetingRoomBooking.Application.Services;
+using MeetingRoomBooking.Application.Services.Abstraction;
 using MeetingRoomBooking.Domain.Abstraction;
 using MeetingRoomBooking.Infrastructure.MeetingRoomContext;
 using MeetingRoomBooking.Infrastructure.Repositories;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Identity.Web;
+using Microsoft.IdentityModel.Tokens;
+using Scalar.AspNetCore;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+var secretKey = jwtSettings["SecretKey"];
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtSettings["Issuer"],
+        ValidAudience = jwtSettings["Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey!))
+    };
+});
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
 
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+
+
+builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(ApplicationDbContext))));
+
 var redisConnectionString = builder.Configuration.GetSection("RedisSettings:ConnectionString").Value;
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = redisConnectionString;
+});
+
+builder.Services.AddScoped<BookingRepository>();
+builder.Services.AddScoped<IBookingRepository>(provider =>
+{
+    var cache = provider.GetRequiredService<IDistributedCache>();
+    var dbRepo = provider.GetRequiredService<BookingRepository>();
+    return new CachedBookingRepository(cache, dbRepo);
 });
 builder.Services.AddScoped<RoomRepository>();
 builder.Services.AddScoped<IRoomRepository>(provider =>
@@ -33,17 +67,37 @@ builder.Services.AddScoped<IRoomRepository>(provider =>
     var dbRepo = provider.GetRequiredService<RoomRepository>();
     return new CachedRoomRepository(cache, dbRepo);
 });
+builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<IUserRepository>(provider =>
+{
+    return provider.GetRequiredService<UserRepository>();
+});
+
+builder.Services.AddScoped<IBookingService, BookingService>();
+builder.Services.AddScoped<IRoomService, RoomService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    
     app.MapOpenApi();
+
+    app.MapScalarApiReference(options =>
+    {
+        options
+            .WithTitle("My Backend API")
+            .WithTheme(ScalarTheme.Moon)
+            .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
+    });
 }
 
 app.UseHttpsRedirection();
 
+app.UseGlobalExceptionHandler();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

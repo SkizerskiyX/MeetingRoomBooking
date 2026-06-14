@@ -17,12 +17,12 @@ namespace MeetingRoomBooking.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.8")
+                .HasAnnotation("ProductVersion", "10.0.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("MeetingRoomBooking.Domain.Booking", b =>
+            modelBuilder.Entity("MeetingRoomBooking.Domain.Entities.Booking", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -37,18 +37,19 @@ namespace MeetingRoomBooking.Infrastructure.Migrations
                     b.Property<DateTimeOffset>("StartTime")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
 
                     b.HasKey("Id");
 
                     b.HasIndex("RoomId");
 
-                    b.ToTable("Booking");
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Bookings");
                 });
 
-            modelBuilder.Entity("MeetingRoomBooking.Domain.Room", b =>
+            modelBuilder.Entity("MeetingRoomBooking.Domain.Entities.Room", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -64,23 +65,77 @@ namespace MeetingRoomBooking.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Room");
+                    b.ToTable("Rooms");
                 });
 
-            modelBuilder.Entity("MeetingRoomBooking.Domain.Booking", b =>
+            modelBuilder.Entity("MeetingRoomBooking.Domain.Entities.User", b =>
                 {
-                    b.HasOne("MeetingRoomBooking.Domain.Room", "Room")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<string>("FullName")
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<DateTime?>("LastLoginAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Username")
+                        .IsUnique();
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("MeetingRoomBooking.Domain.Entities.Booking", b =>
+                {
+                    b.HasOne("MeetingRoomBooking.Domain.Entities.Room", "Room")
                         .WithMany("Booking")
                         .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MeetingRoomBooking.Domain.Entities.User", "User")
+                        .WithMany("Bookings")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Room");
+
+                    b.Navigation("User");
                 });
 
-            modelBuilder.Entity("MeetingRoomBooking.Domain.Room", b =>
+            modelBuilder.Entity("MeetingRoomBooking.Domain.Entities.Room", b =>
                 {
                     b.Navigation("Booking");
+                });
+
+            modelBuilder.Entity("MeetingRoomBooking.Domain.Entities.User", b =>
+                {
+                    b.Navigation("Bookings");
                 });
 #pragma warning restore 612, 618
         }

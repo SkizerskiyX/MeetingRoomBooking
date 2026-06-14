@@ -30,7 +30,7 @@ namespace MeetingRoomBooking.Infrastructure.Repositories
             var existingBooking = await _context.Bookings.FirstOrDefaultAsync(x => x.Id == id, ct);
             if (existingBooking == null)
             {
-                throw new KeyNotFoundException($"Room with id {id} not found");
+                throw new KeyNotFoundException($"Booking with id {id} not found");
             }
             _context.Bookings.Remove(existingBooking);
             await _context.SaveChangesAsync(ct);

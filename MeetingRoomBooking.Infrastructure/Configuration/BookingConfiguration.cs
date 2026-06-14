@@ -1,9 +1,6 @@
 ﻿using MeetingRoomBooking.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MeetingRoomBooking.Infrastructure.Configuration
 {
@@ -14,8 +11,12 @@ namespace MeetingRoomBooking.Infrastructure.Configuration
             builder.HasKey(b => b.Id);
             builder.HasOne(b => b.Room)
                    .WithMany(r => r.Booking)
-                   .HasForeignKey(b => b.RoomId);
-
+                   .HasForeignKey(b => b.RoomId)
+                   .OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(b => b.User)
+                   .WithMany(u => u.Bookings)
+                   .HasForeignKey(b => b.UserId)
+                   .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

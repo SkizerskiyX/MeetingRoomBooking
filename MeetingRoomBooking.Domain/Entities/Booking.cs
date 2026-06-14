@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace MeetingRoomBooking.Domain.Entities
 {
@@ -9,7 +7,9 @@ namespace MeetingRoomBooking.Domain.Entities
         public Guid Id { get; set; }
         public Guid RoomId { get; set; }
         public Room Room { get; set; } = new Room();
-        public string UserId { get; set; } = string.Empty;
+        public Guid UserId { get; set; }
+        [Required]
+        public User User { get; set; } = new User();
         public DateTimeOffset StartTime { get; set; }
         public DateTimeOffset EndTime { get; set; }
     }

@@ -1,8 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
 using MeetingRoomBooking.Infrastructure.Configuration;
 using MeetingRoomBooking.Domain.Entities;
 
@@ -13,11 +9,13 @@ namespace MeetingRoomBooking.Infrastructure.MeetingRoomContext
         public ApplicationDbContext(DbContextOptions options) : base(options) { }
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Booking> Bookings { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BookingConfiguration());
             modelBuilder.ApplyConfiguration(new RoomConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
         }
     }
 }

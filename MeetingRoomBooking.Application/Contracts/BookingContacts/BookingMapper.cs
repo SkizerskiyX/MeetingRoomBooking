@@ -25,7 +25,7 @@ namespace MeetingRoomBooking.Application.Contracts.BookingContacts
             {
                 Id = Guid.NewGuid(),
                 RoomId = roomId,
-                UserId = userId,
+                UserId = Guid.Parse(userId),
                 StartTime = bookingDto.StartTime,
                 EndTime = bookingDto.EndTime
             }; 
