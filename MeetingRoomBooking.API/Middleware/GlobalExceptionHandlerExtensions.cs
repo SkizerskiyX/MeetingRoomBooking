@@ -6,7 +6,6 @@ namespace MeetingRoomBooking.API.Middleware
     {
         public static IApplicationBuilder UseGlobalExceptionHandler(this IApplicationBuilder builder)
         {
-            // Use inline middleware to avoid DI resolution issues for development exception page
             return builder.Use(async (context, next) =>
             {
                 try

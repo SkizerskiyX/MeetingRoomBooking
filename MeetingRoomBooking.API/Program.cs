@@ -1,8 +1,11 @@
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using MeetingRoomBooking.API.Middleware;
+using MeetingRoomBooking.Application.Contracts.BookingContacts;
 using MeetingRoomBooking.Application.Services;
 using MeetingRoomBooking.Application.Services.Abstraction;
 using MeetingRoomBooking.Domain.Abstraction;
+using MeetingRoomBooking.Domain.Entities;
 using MeetingRoomBooking.Infrastructure.MeetingRoomContext;
 using MeetingRoomBooking.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -40,7 +43,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
-
+builder.Services.AddValidatorsFromAssemblyContaining<BookingDto>();
 
 builder.Services.AddOpenApi();
 
@@ -77,6 +80,8 @@ builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<IRoomService, RoomService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+builder.Services.AddScoped<RefreshTokenRepository>();
+builder.Services.AddScoped<IRefreshTokenRepository>(provider => provider.GetRequiredService<RefreshTokenRepository>());
 
 var app = builder.Build();
 
@@ -108,4 +113,7 @@ using (var scope = app.Services.CreateScope())
     db.Database.Migrate();
 }
 
+
+
 app.Run();
+

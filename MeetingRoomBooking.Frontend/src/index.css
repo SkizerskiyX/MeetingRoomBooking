@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    @apply text-gray-900 bg-gray-50 dark:text-gray-100 dark:bg-gray-900;
+  }
+
+  ::selection {
+    @apply bg-primary-200 dark:bg-primary-800 text-primary-900 dark:text-primary-100;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.gray.300') transparent;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom focus ring */
+*:focus-visible {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+}
+
+/* Date input styling */
+input[type="datetime-local"] {
+  @apply appearance-none;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  @apply cursor-pointer opacity-50 hover:opacity-100 transition-opacity;
+}

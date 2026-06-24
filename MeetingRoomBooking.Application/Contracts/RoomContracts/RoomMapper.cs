@@ -21,6 +21,7 @@ namespace MeetingRoomBooking.Application.Contracts.RoomContracts
         {
             return new Room
             {
+                Id = Guid.NewGuid(),
                 Name = roomDto.Name,
                 Capacity = roomDto.Capacity
 

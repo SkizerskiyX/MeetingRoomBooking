@@ -1,0 +1,16 @@
+const fs=require('fs');  
+const pkg={ 
+  name:'meetingroombooking-frontend', 
+  version:'1.0.0', 
+  private:true, 
+  type:'module', 
+  scripts:{dev:'vite',start:'vite','build':'tsc -b && vite build',preview:'vite preview'}, 
+  dependencies:{ 
+    axios:'1.7.9','date-fns':'4.1.0','framer-motion':'12.4.0','lucide-react':'0.475.0', 
+    react:'18.3.1','react-dom':'18.3.1','react-hot-toast':'2.5.2','react-router-dom':'7.1.5' 
+  }, 
+  devDependencies:{ 
+    '@types/react':'18.3.18','@types/react-dom':'18.3.5','@vitejs/plugin-react':'4.3.4', 
+    autoprefixer:'10.4.20',postcss:'8.5.1',tailwindcss:'3.4.17',typescript:'5.7.3',vite:'5.4.21' 
+  } 
+}; 

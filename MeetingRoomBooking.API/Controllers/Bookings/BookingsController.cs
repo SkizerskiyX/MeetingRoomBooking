@@ -34,18 +34,18 @@ namespace MeetingRoomBooking.API.Controllers.Bookings
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddBookingAsync(Guid roomId, BookingDto bookingDto, CancellationToken ct)
+        public async Task<IActionResult> AddBookingAsync([FromRoute] Guid roomId, [FromBody] BookingDto bookingDto, CancellationToken ct)
         {
             var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userIdClaim == null || !Guid.TryParse(userIdClaim, out var userId))
                 return Unauthorized();
 
             var booking = await _bookingService.CreateBookingAsync(roomId, bookingDto, userId, ct);
-            return CreatedAtAction(nameof(GetBookingAsync), new { id = booking.Id }, booking);
+            return Created($"/api/rooms/{roomId}/bookings/{booking.Id}", booking);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBookingAsync(Guid id, CancellationToken ct)
+        public async Task<IActionResult> DeleteBookingAsync([FromRoute] Guid roomId, [FromRoute] Guid id, CancellationToken ct)
         {
             var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userIdClaim == null || !Guid.TryParse(userIdClaim, out var userId))

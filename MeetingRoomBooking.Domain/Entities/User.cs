@@ -17,5 +17,6 @@ namespace MeetingRoomBooking.Domain.Entities
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? LastLoginAt { get; set; }
         public List<Booking> Bookings { get; set; } = new();
+        public List<RefreshToken> RefreshTokens { get; set; } = new();
     }
 }

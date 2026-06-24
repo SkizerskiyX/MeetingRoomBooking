@@ -12,14 +12,17 @@ namespace MeetingRoomBooking.Tests.Controllers
         private readonly Mock<IUserService> _mockUserService;
         private readonly Mock<IJwtTokenService> _mockJwtTokenService;
         private readonly MeetingRoomBooking.API.Controllers.Auth.AuthController _controller;
+        private readonly Mock<MeetingRoomBooking.Domain.Abstraction.IRefreshTokenRepository> _mockRefreshRepo;
 
         public AuthControllerTests()
         {
             _mockUserService = new Mock<IUserService>();
             _mockJwtTokenService = new Mock<IJwtTokenService>();
+            _mockRefreshRepo = new Mock<MeetingRoomBooking.Domain.Abstraction.IRefreshTokenRepository>();
             _controller = new MeetingRoomBooking.API.Controllers.Auth.AuthController(
                 _mockUserService.Object,
-                _mockJwtTokenService.Object);
+                _mockJwtTokenService.Object,
+                _mockRefreshRepo.Object);
         }
 
         [Fact]

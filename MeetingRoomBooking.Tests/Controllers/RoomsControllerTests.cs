@@ -90,7 +90,7 @@ namespace MeetingRoomBooking.Tests.Controllers
 
             var result = await _controller.CreateRoomAsync(roomDto, CancellationToken.None);
 
-            var createdResult = Assert.IsType<CreatedAtActionResult>(result);
+            var createdResult = Assert.IsType<CreatedResult>(result);
             Assert.Equal(createdRoom, createdResult.Value);
         }
 

@@ -106,7 +106,7 @@ namespace MeetingRoomBooking.Tests.Controllers
 
             var result = await _controller.AddBookingAsync(roomId, bookingDto, CancellationToken.None);
 
-            var createdResult = Assert.IsType<CreatedAtActionResult>(result);
+            var createdResult = Assert.IsType<CreatedResult>(result);
             Assert.Equal(responseDto, createdResult.Value);
         }
 
@@ -130,12 +130,13 @@ namespace MeetingRoomBooking.Tests.Controllers
         [Fact]
         public async Task DeleteBookingAsync_WhenAuthorized_ReturnsNoContent()
         {
+            var roomId = Guid.NewGuid();
             var bookingId = Guid.NewGuid();
 
             _mockBookingService.Setup(x => x.DeleteBookingAsync(bookingId, It.IsAny<Guid>(), It.IsAny<CancellationToken>()))
                 .Returns(Task.CompletedTask);
 
-            var result = await _controller.DeleteBookingAsync(bookingId, CancellationToken.None);
+            var result = await _controller.DeleteBookingAsync(roomId, bookingId, CancellationToken.None);
 
             Assert.IsType<NoContentResult>(result);
         }
@@ -143,11 +144,12 @@ namespace MeetingRoomBooking.Tests.Controllers
         [Fact]
         public async Task DeleteBookingAsync_WhenUnauthorized_ReturnsUnauthorized()
         {
+            var roomId = Guid.NewGuid();
             var bookingId = Guid.NewGuid();
 
             _controller.ControllerContext.HttpContext.User = new ClaimsPrincipal();
 
-            var result = await _controller.DeleteBookingAsync(bookingId, CancellationToken.None);
+            var result = await _controller.DeleteBookingAsync(roomId, bookingId, CancellationToken.None);
 
             Assert.IsType<UnauthorizedResult>(result);
         }

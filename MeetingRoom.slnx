@@ -2,6 +2,27 @@
   <Project Path="MeetingRoomBooking.API/MeetingRoom.API.csproj" />
   <Project Path="MeetingRoomBooking.Application/MeetingRoomBooking.Application.csproj" Id="745fc068-797b-4a00-a5cb-a3f3b75879b5" />
   <Project Path="MeetingRoomBooking.Domain/MeetingRoomBooking.Domain.csproj" Id="d6469afa-9310-49d3-9384-301c10ca2942" />
+  <Project Path="MeetingRoomBooking.Frontend/" Type="Website" DisplayName="MeetingRoomBooking.Frontend">
+    <BuildType Project="Debug" />
+    <Properties Name="WebsiteProperties">
+      <Property Name="Debug.AspNetCompiler.Debug" Value="&quot;True&quot;" />
+      <Property Name="Debug.AspNetCompiler.FixedNames" Value="&quot;false&quot;" />
+      <Property Name="Debug.AspNetCompiler.ForceOverwrite" Value="&quot;true&quot;" />
+      <Property Name="Debug.AspNetCompiler.PhysicalPath" Value="&quot;MeetingRoomBooking.Frontend\&quot;" />
+      <Property Name="Debug.AspNetCompiler.TargetPath" Value="&quot;PrecompiledWeb\localhost_64570\&quot;" />
+      <Property Name="Debug.AspNetCompiler.Updateable" Value="&quot;true&quot;" />
+      <Property Name="Debug.AspNetCompiler.VirtualPath" Value="&quot;/localhost_64570&quot;" />
+      <Property Name="Release.AspNetCompiler.Debug" Value="&quot;False&quot;" />
+      <Property Name="Release.AspNetCompiler.FixedNames" Value="&quot;false&quot;" />
+      <Property Name="Release.AspNetCompiler.ForceOverwrite" Value="&quot;true&quot;" />
+      <Property Name="Release.AspNetCompiler.PhysicalPath" Value="&quot;MeetingRoomBooking.Frontend\&quot;" />
+      <Property Name="Release.AspNetCompiler.TargetPath" Value="&quot;PrecompiledWeb\localhost_64570\&quot;" />
+      <Property Name="Release.AspNetCompiler.Updateable" Value="&quot;true&quot;" />
+      <Property Name="Release.AspNetCompiler.VirtualPath" Value="&quot;/localhost_64570&quot;" />
+      <Property Name="TargetFrameworkMoniker" Value="&quot;.NETFramework,Version%3Dv4.8&quot;" />
+      <Property Name="VWDPort" Value="&quot;64570&quot;" />
+    </Properties>
+  </Project>
   <Project Path="MeetingRoomBooking.Infrastructure/MeetingRoomBooking.Infrastructure.csproj" Id="71dffbbf-671e-4f5e-88c7-54848a030d43" />
-<Project Path="MeetingRoomBooking.Tests/MeetingRoomBooking.Tests.csproj" />
+  <Project Path="MeetingRoomBooking.Tests/MeetingRoomBooking.Tests.csproj" />
 </Solution>
