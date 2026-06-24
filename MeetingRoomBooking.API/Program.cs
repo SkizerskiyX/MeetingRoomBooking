@@ -9,8 +9,10 @@ using MeetingRoomBooking.Domain.Entities;
 using MeetingRoomBooking.Infrastructure.MeetingRoomContext;
 using MeetingRoomBooking.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
 using System.Text;
@@ -95,8 +97,14 @@ if (app.Environment.IsDevelopment())
             .WithTitle("My Backend API")
             .WithTheme(ScalarTheme.Moon)
             .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
+        options.AddServer("https://meetingroombooking-production.up.railway.app");
+
     });
 }
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedProto
+});
 
 app.UseHttpsRedirection();
 
