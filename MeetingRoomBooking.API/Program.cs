@@ -41,6 +41,21 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// CORS Configuration
+var corsSettings = builder.Configuration.GetSection("CorsSettings");
+var allowedOrigins = corsSettings.GetSection("AllowedOrigins").Get<string[]>() ?? Array.Empty<string>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins(allowedOrigins)
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
+
 builder.Services.AddControllers();
 
 builder.Services.AddFluentValidationAutoValidation();
@@ -57,6 +72,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = redisConnectionString;
 });
+
 
 builder.Services.AddScoped<BookingRepository>();
 builder.Services.AddScoped<IBookingRepository>(provider =>
@@ -107,6 +123,8 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 });
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowFrontend");
 
 app.UseGlobalExceptionHandler();
 
