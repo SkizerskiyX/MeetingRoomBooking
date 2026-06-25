@@ -12,4 +12,7 @@ export default defineConfig({
       },
     },
   },
+  preview: {
+    allowedHosts: ['meetingroombooking-frontend-production.up.railway.app'],
+  },
 })
