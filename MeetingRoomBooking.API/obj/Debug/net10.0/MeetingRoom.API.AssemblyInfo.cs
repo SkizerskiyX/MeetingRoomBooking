@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeetingRoom.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11aa2c972ea87b302f275e4948c343519eec5f00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+767798c0c586af148eab50ecc5e6d9ba3e805a5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeetingRoom.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeetingRoom.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
