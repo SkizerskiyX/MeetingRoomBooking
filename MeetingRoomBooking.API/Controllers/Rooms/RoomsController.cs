@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MeetingRoomBooking.API.Controllers.Rooms
 {
     [ApiController]
+    [Authorize]
     [Route("api/rooms")]
     public class RoomsController : ControllerBase
     {
